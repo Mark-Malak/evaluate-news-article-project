@@ -1,8 +1,10 @@
 import handleSubmit from './js/formHandler'
 
-//To DOOOOOOOOOO import ur styles 
-import './styles/style.scss'
- 
+import './styles/base.scss'
+import './styles/footer.scss'
+import './styles/form.scss'
+import './styles/header.scss'
+import './styles/resers.scss'
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOM is loaded ');
     const form = document.getElementById('form')
