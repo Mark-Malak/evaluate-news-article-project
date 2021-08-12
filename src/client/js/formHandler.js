@@ -1,5 +1,5 @@
 import { validURL } from './checkURL'
-
+import 'babel-polyfill'
 const post = async (url = '', data = {}) => {
   const response = await fetch(url, {
     method: 'POST',
@@ -14,6 +14,8 @@ const post = async (url = '', data = {}) => {
       return await response.json()
   } catch (error) {
     console.log("oops something went wrong" , error)
+    //added a ui message as per suggested 
+    alert("oops something went wrong");
   }
 }
 
@@ -34,4 +36,6 @@ const handleSubmit = async () => {
   }
 }
 
-export default handleSubmit
+module.exports = {
+  handleSubmit
+};

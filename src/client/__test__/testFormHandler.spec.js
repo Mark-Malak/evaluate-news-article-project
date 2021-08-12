@@ -1,5 +1,7 @@
 //reference : udacity example code 
-import { handleSubmit } from "../src/client/js/formHandler"
+import 'babel-polyfill'
+//fixed the path as per requested
+const { handleSubmit } = require("../js/formHandler")
 // The describe() function takes two arguments - a string description, and a test suite as a callback function.  
 // A test suite may contain one or more related tests    
 describe("Testing the submit functionality", () => {
